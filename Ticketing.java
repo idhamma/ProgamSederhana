@@ -85,11 +85,11 @@ public class Ticketing {
         }
 
         if (kelas == 1){
-            harga = jarak*kelas_ekonomi;
+            harga = jarak*kelas_ekonomi*jumlah;
         } else if (kelas == 2) {
-            harga = jarak*kelas_bisnis;
+            harga = jarak*kelas_bisnis*jumlah;
         }else if(kelas == 3){
-            harga = jarak*kelas_first;
+            harga = jarak*kelas_first*jumlah;
         }else {kondisi = 0;}
 
         kembalian = nominal - harga;
